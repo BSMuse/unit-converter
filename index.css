@@ -1,0 +1,30 @@
+body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width: 550px;
+height: 260px;
+left: 0px;
+top: 0px;
+background: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+} 
+
+.bottom {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+width: 550px;
+height: 550px;
+left: 89px;
+top: 718px;
+background: #1F2937;
+}
