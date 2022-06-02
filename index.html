@@ -3,20 +3,22 @@
     <head>
         <meta charset = "UTF-8"> 
         <link rel="stylesheet" href="index.css">
-    <title>Unit Converter</title>
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+        <title>Unit Converter</title>
     </head>
     <body>
         <div class="top">
-        <p>Metric/Imperial unit conversion</p>
-        <p id="count-el">0</p>
-    </div>
-    <div class="bottom">
-        <h5>Length (Meter/Feet)</h5>
-        <h6><div id="meter1">0</div> meters = <div id="feet1">0.000</div> feet | <div id="feet2">0</div>feet = <div id="meter2">0.000</div> meters</h6>
-        <h5>Volume (Liters/Gallons)</h5>
-        <h6><div id="liters1">0</div> liters = <div id="gallons1">0.000</div> gallons | <div id="gallons2">0</div>gallons = <div id="liters2">0.000</div> liters</h6>
-        <h5>Mass (Kilograms/Pounds)</h5>
-        <h6><div id="kilos1">0</div> kilos = <div id="pounds1">0.000</div> pounds | <div id="pounds2">0</div>pounds = <div id="kilos2">0.000</div> kilos</h6>
-    </div>
+            <script> src="index.js"</script>
+            <p>Metric/Imperial unit conversion</p>
+            <input type="text" placeholder= 0  style="width: 300px" maxlength= 5 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="input-el">
+        </div>
+        <div class="bottom">
+            <h5>Length (Meter/Feet)</h5>
+            <p class ="unit-str"><span id="meter1">0</span> meters = <span id="feet1">0.000</span> feet | <span id="feet2">0</span> feet = <span id="meter2">0.000</span> meters</p>
+            <h5>Volume (Liters/Gallons)</h5>
+            <p class ="unit-str"><span id="liters1">0</span> liters = <span id="gallons1">0.000</span> gallons | <span id="liters2">0</span> liters = <span id="gallons2">0.000</span> gallons</p>
+            <h5>Mass (Kilograms/Pounds)</h5>
+            <p class ="unit-str"><span id="kilos1">0</span> kilograms = <span id="pounds1">0.000</span> pounds | <span id="kilos2">0</span> kilograms = <span id="pounds">0.000</span> pounds</p>
+        </div>
     </body>
 </html>
