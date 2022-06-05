@@ -8,17 +8,17 @@
     </head>
     <body>
         <div class="top">
-            <script> src="index.js"</script>
             <p>Metric/Imperial unit conversion</p>
-            <input type="text" placeholder= 0  style="width: 300px" maxlength= 5 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" id="input-el">
+            <input type="text" placeholder= 0 id="input" class = "input" style="width: 300px" maxlength= 5 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')">
         </div>
         <div class="bottom">
             <h5>Length (Meter/Feet)</h5>
-            <p class ="unit-str"><span id="meter1">0</span> meters = <span id="feet1">0.000</span> feet | <span id="feet2">0</span> feet = <span id="meter2">0.000</span> meters</p>
+            <p class ="unit-str"><span Id="meters1">0</span> meters = <span id="feet2">0.000</span> feet | <span Id="feet1">0</span> feet = <span id="meters2">0.000</span> meters</p>
             <h5>Volume (Liters/Gallons)</h5>
-            <p class ="unit-str"><span id="liters1">0</span> liters = <span id="gallons1">0.000</span> gallons | <span id="liters2">0</span> liters = <span id="gallons2">0.000</span> gallons</p>
+            <p class ="unit-str"><span Id ="liters1">0</span> liters = <span id="gallons2">0.000</span> gallons | <span Id ="gallons1">0</span> gallons = <span id="liters2">0.000</span> liters</p>
             <h5>Mass (Kilograms/Pounds)</h5>
-            <p class ="unit-str"><span id="kilos1">0</span> kilograms = <span id="pounds1">0.000</span> pounds | <span id="kilos2">0</span> kilograms = <span id="pounds">0.000</span> pounds</p>
+            <p class ="unit-str"><span Id ="kilos1">0</span> kilograms = <span id="pounds2">0.000</span> pounds | <span Id="pounds1">0</span> pounds = <span id="kilos2">0.000</span> kilograms</p>
+            <script src="index.js"></script>
         </div>
     </body>
 </html>

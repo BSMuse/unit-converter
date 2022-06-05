@@ -30,7 +30,7 @@ body {
     color: #FFFFFF;
 } 
 
-#input-el {
+#input {
     margin-bottom: 24px;
     font-style: normal;
     font-weight: 800;
@@ -45,7 +45,7 @@ body {
     transition: text-decoration-color 300ms
 }
 
-#input-el:hover {
+#input:hover {
 text-decoration-color: white;
   }
 
